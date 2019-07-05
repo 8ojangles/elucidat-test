@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="theme-color" content="#000000" />
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <title>Test submission - 8ojangles</title>
+</head>
+
+<body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+
+        <section class="page page--wrapper">
+        
+        <header class="page--header">
+            <h1>Cinema booking Demo</h1>
+            <button class="js-reset-demo reset-demo-btn btn">Reset Demo</button>
+        </header>
+        <div class="info">
+            <p>Hover your mouse over a seat on the theatre layout for availability and further details. Click to select your seat and confirm your booking</p>
+        </div> 
+
+        <div class="panel--wrapper">
+
+            <div class="page--panel panel--main">
+                
+                <header>
+                    <h2>Screen</h2>
+                </header>
+
+                <article class="block--grid">
+                    <div data-column="1" data-row="A" class="block--grid__item js-seat"></div>
+                    <div data-column="2" data-row="A" class="block--grid__item js-seat"></div>
+                    <div data-column="3" data-row="A" class="block--grid__item js-seat"></div>
+                    <div data-column="4" data-row="A" class="block--grid__item js-seat"></div>
+                    <div data-column="5" data-row="A" class="block--grid__item js-seat"></div>
+                    <div data-column="1" data-row="B" class="block--grid__item js-seat"></div>
+                    <div data-column="2" data-row="B" class="block--grid__item js-seat"></div>
+                    <div data-column="3" data-row="B" class="block--grid__item js-seat"></div>
+                    <div data-column="4" data-row="B" class="block--grid__item js-seat"></div>
+                    <div data-column="5" data-row="B" class="block--grid__item js-seat"></div>
+                    <div data-column="1" data-row="C" class="block--grid__item js-seat"></div>
+                    <div data-column="2" data-row="C" class="block--grid__item js-seat"></div>
+                    <div data-column="3" data-row="C" class="block--grid__item js-seat"></div>
+                    <div data-column="4" data-row="C" class="block--grid__item js-seat"></div>
+                    <div data-column="5" data-row="C" class="block--grid__item js-seat"></div>
+                    <div data-column="1" data-row="D" class="block--grid__item js-seat"></div>
+                    <div data-column="2" data-row="D" class="block--grid__item js-seat"></div>
+                    <div data-column="3" data-row="D" class="block--grid__item js-seat"></div>
+                    <div data-column="4" data-row="D" class="block--grid__item js-seat"></div>
+                    <div data-column="5" data-row="D" class="block--grid__item js-seat"></div>
+                    <div data-column="1" data-row="E" class="block--grid__item js-seat"></div>
+                    <div data-column="2" data-row="E" class="block--grid__item js-seat"></div>
+                    <div data-column="3" data-row="E" class="block--grid__item js-seat"></div>
+                    <div data-column="4" data-row="E" class="block--grid__item js-seat"></div>
+                    <div data-column="5" data-row="E" class="block--grid__item js-seat"></div>
+                </article>
+
+
+                <div class="details--panel">
+                    <div class="info--row">
+                        <p>Seat Number: </p>
+                        <p class="info--detail js-seat-number"></p>
+                    </div>
+                    
+                    <div class="info--row">
+                        <p>Price: </p>
+                        <p class="info--detail js-seat-price"></p>
+                    </div>
+
+                    <div class="info--row">
+                        <p>Available: </p>
+                        <p class="info--detail js-seat-availability"></p>
+                    </div>
+
+                    <div class="info--row">
+                        <p>Disabled Access: </p>
+                        <p class="info--detail js-seat-disabled"></p>
+                    </div>
+
+                    <div class="info--row info--row__messages">
+                        <p class="error--message">This seat is already booked, please select another.</p>
+                        <p class="confirm--message">Click seat to confirm your booking.</p>
+                    </div>
+                </div>
+
+
+                <div class="offscreen--ticket">
+                    <button title="close ticket and return to seat selection" class="js-close-modal close-modal--button">&times;</button>
+
+
+                    <div class="offscreen--ticket__panel">
+
+                        <h3>Generic Comedy Film 4</h3>
+
+                        <div class="offscreen--ticket__slide offscreen--ticket__loading">
+                            <div class="loading-spinner">
+                                <div class="spinner"></div>
+                                <p class="loading-message">Booking your seat</p>
+                            </div>
+                        </div>
+                        
+                        <div class="offscreen--ticket__slide offscreen--ticket__confirmation">
+
+                            <h4><span class="is-booking is-active">Your seat has been booked.</span><span class="is-booked">You have already booked the seat shown below.</span></h4>
+                            <div class="info--row">
+                                <p>The details are as follows:</p>
+                            </div>
+                            <div class="info--row">
+                                <p>Seat Number: </p>
+                                <p class="info--detail js-seat-number"></p>
+                            </div>
+                            
+                            <div class="info--row">
+                                <p>Price: </p>
+                                <p class="info--detail js-seat-price"></p>
+                            </div>
+
+                            <div class="info--row">
+                                <p>Disabled Access: </p>
+                                <p class="info--detail js-seat-disabled"></p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        </section>
+
+    <script src="js/vendor.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+</html>
